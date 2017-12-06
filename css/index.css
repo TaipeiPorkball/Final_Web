@@ -65,7 +65,7 @@
 #body
 {
   width:59.249%;
-  height: 300px;
+  height: 350px;
   margin:20px auto;
   display:none;
 }
@@ -101,6 +101,10 @@
 
 }
 @media screen and (max-width: 768px) {
+  #body
+  {
+    height:500px;
+  }
   .line-block
   {
     width:45%;
@@ -134,7 +138,7 @@
   #body
   {
     width:300px;
-    height: 300px;
+    height: 500px;
     margin-top:20px;
     margin-left:0px;
   }
