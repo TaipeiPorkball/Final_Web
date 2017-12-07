@@ -19,7 +19,7 @@
   line-height: 5.2;
 }
 
-.log-button
+.logbutton
 {
   width:200px;
   height:50px;
@@ -30,10 +30,73 @@
   font-size: 20px;
   font-weight:bold;
   font-family: Yuan;
-  line-height:2.2;
+  line-height:2.4;
+  cursor:pointer;
   clear:both;
 }
+#masking
+{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.3);
+	position:fixed;
+	top:0px;
+	display:none;
+	z-index:99;
+}
 
+.popup
+{
+	width:1024px;
+	height:auto;
+	background-color:#fff;
+	position:absolute;
+	z-index:100;
+	border:1px solid #ebeaea;
+	left:400px;
+	top:96px;
+	display:none;
+}
+.popup .top_nav
+{
+	width:1024px;
+	height:46px;
+	background-image: url(../images/popup_top_bj.jpg);
+	border-bottom:1px solid #ebeaea;
+	position:relative;
+}
+.popup .top_nav a.exit
+{
+  background:url(../img/exit_cross.png) repeat 0px 0px;
+  width:35px;
+  height:35px;
+  display: block;
+  position:absolute;
+  top:8px;
+  right:10px;
+  cursor:pointer;
+}
+
+.popup .top_nav a.exit:hover
+{
+  background: url(../img/exit_cross.png) repeat 0px -35px;
+}
+
+.left_nav
+{
+  width:512px;
+	height:500px;
+  background-color:#fff;
+  float:left;
+}
+.right_nav
+{
+  width:512px;
+	height:500px;
+  background-color:#fff;
+  float:left;
+}
+/*---------------------------------------------------------*/
 .index-content
 {
   width:59.249%;
@@ -46,7 +109,6 @@
   line-height:1.6;
   clear:both;
 }
-
 .line-button
 {
   width:300px;
