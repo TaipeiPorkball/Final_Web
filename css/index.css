@@ -63,9 +63,10 @@
 }
 #body
 {
-  width:59.249%;
+  width:70%;
   height: 350px;
-  margin:20px auto;
+  margin-left:15.1%;
+  margin-top:20px;
   display:none;
 }
 
@@ -102,6 +103,7 @@
 @media screen and (max-width: 768px) {
   #body
   {
+    margin-left:14.3%;
     height:500px;
   }
   .line-block
@@ -138,6 +140,7 @@
   {
     width:300px;
     height: 500px;
+    margin-left:13%;
   }
   .line-block
   {
