@@ -95,8 +95,6 @@
   .line-block
   {
     width:337px;
-    font-size:45px;
-    line-height: 2.9 ;
   }
   .index-content
   {
@@ -109,13 +107,11 @@
   #body
   {
     width:480px;
-    height:500px;
+    height:600px;
   }
   .line-block
   {
     width:418px;
-    font-size:50px;
-    line-height: 2.6 ;
   }
   .index-content
   {
@@ -123,4 +119,16 @@
   }
 
 
+}
+@media screen and (max-width: 480px) {
+  #body
+  {
+    width:320px;
+    height:600px;
+  }
+  .line-block
+  {
+    width:300px;
+    margin-left:10px
+  }
 }
