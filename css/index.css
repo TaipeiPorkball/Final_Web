@@ -52,7 +52,6 @@
 	background-color:#fff;
 	position:absolute;
 	z-index:100;
-	border:1px solid #ebeaea;
 	left:400px;
 	top:96px;
 	display:none;
@@ -61,13 +60,29 @@
 {
 	width:1024px;
 	height:46px;
-	background-image: url(../images/popup_top_bj.jpg);
 	border-bottom:1px solid #ebeaea;
 	position:relative;
 }
+.popup .top_nav img
+{
+  margin-top:10px;
+   width:26px;
+   height:26px;
+   margin-left:20px;
+   float:left;
+}
+.popup .top_nav span
+{
+  margin-left:10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight:bold;
+  font-family: Yuan;
+  line-height:2.63;
+}
 .popup .top_nav a.exit
 {
-  background:url(../img/exit_cross.png) repeat 0px 0px;
+  background:url(../img/logo/exit_cross.png) repeat 0px 0px;
   width:35px;
   height:35px;
   display: block;
@@ -79,22 +94,290 @@
 
 .popup .top_nav a.exit:hover
 {
-  background: url(../img/exit_cross.png) repeat 0px -35px;
+  background: url(../img/logo/exit_cross.png) repeat 0px -35px;
 }
 
 .left_nav
 {
-  width:512px;
+  width:511px;
 	height:500px;
   background-color:#fff;
   float:left;
 }
+.popup-title
+{
+  font-size: 25px;
+  font-weight:bold;
+  font-family: Yuan;
+  margin-left:50px;
+  margin-top:30px;
+  margin-bottom:35px;
+  color:#888888;
+}
+.popup .left_nav input
+{
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #888888;
+  font-family:Yuan;
+  font-size: 16px;
+  height: 40px;
+  padding:0 0 0 34px;
+	margin-left:50px;
+  margin-bottom:20px;
+  transition: background 0.3s ease-in-out;
+  width: 220px;
+	float:left;
+}
+.popup .left_nav input:focus
+{
+  outline: none;
+  border-color: rgb(154, 63, 228);
+  box-shadow: 0 0 0px rgb(154, 63, 228);
+}
+.popup .left_nav .input-account-sign-in
+{
+  background:url(../img/logo/account.jpg) no-repeat left top;
+}
+.popup .left_nav .input-password-sign-in
+{
+  background:url(../img/logo/password.jpg) no-repeat left top;
+}
+.popup .left_nav .input-account-sign-in:focus
+{
+  background:url(../img/logo/account-focus.png) no-repeat left top;
+}
+.popup .left_nav .input-password-sign-in:focus
+{
+  background:url(../img/logo/password-focus.png) no-repeat left top;
+}
+.popup .left_nav .button
+{
+    -webkit-appearance: none;
+    background: rgb(154, 63, 228);
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family:Yuan;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+    width: 255px;
+	  padding:0 50px 0 50px;
+	  font-weight: bold;
+}
+.popup .left_nav .button:hover
+{
+  	background: rgba(154, 63, 228,0.80);
+}
+.mean
+{
+  width:220px;
+  margin-left:50px;
+}
+.google
+{
+  width:40px;
+  height:40px;
+  margin-right:30px;
+  margin-top:45px;
+  float: left;
+  background:url("../img/logo/google-1015752_960_720.png");
+}
+.facebook
+{
+  width:40px;
+  height:40px;
+  margin-right:30px;
+  margin-top:45px;
+  float: left;
+  background:url("../img/logo/facebook-512.png");
+}
+.twitter
+{
+  width:40px;
+  height:40px;
+  margin-right:30px;
+  margin-top:45px;
+  float: left;
+  background:url("../img/logo/697029-twitter-256.png");
+}
+.divide-line
+{
+  width:1px;
+  height:450px;
+  background-color:#DDDDDD;
+  margin-top:25px;
+  margin-left:0.5px;
+  float:left;
+}
 .right_nav
 {
-  width:512px;
+  width:511px;
 	height:500px;
   background-color:#fff;
   float:left;
+}
+.popup .right_nav .type-area input
+{
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #888888;
+  font-family:Yuan;
+  font-size: 16px;
+  height: 40px;
+  padding:0 0 0 34px;
+	margin-left:50px;
+  margin-bottom:20px;
+  transition: background 0.3s ease-in-out;
+  width: 220px;
+	float:left;
+}
+.popup .right_nav .type-area input:focus
+{
+  outline: none;
+  border-color: rgb(154, 63, 228);
+  box-shadow: 0 0 0px rgb(154, 63, 228);
+}
+.popup .right_nav .type-area .input-account-sign-up
+{
+  background:url(../img/logo/account.jpg) no-repeat left top;
+}
+.popup .right_nav .type-area .input-password-sign-up
+{
+  background:url(../img/logo/password.jpg) no-repeat left top;
+}
+.popup .right_nav .type-area .input-account-sign-up:focus
+{
+  background:url(../img/logo/account-focus.png) no-repeat left top;
+}
+.popup .right_nav .type-area .input-password-sign-up:focus
+{
+  background:url(../img/logo/password-focus.png) no-repeat left top;
+}
+.popup .right_nav .type-area .input-password-sign-up-confirm
+{
+  background:url(../img/logo/key.png) no-repeat left top;
+}
+.popup .right_nav .type-area .input-password-sign-up-confirm:focus
+{
+  background:url(../img/logo/key-focus.png) no-repeat left top;
+}
+.popup .right_nav .type-area .input-nickname-sign-up
+{
+  background:url(../img/logo/nickname.png) no-repeat left top;
+}
+.popup .right_nav .type-area .input-nickname-sign-up:focus
+{
+  background:url(../img/logo/nickname-focus.png) no-repeat left top;
+}
+.radio-area
+{
+  clear: both;
+  float:left;
+  margin-top:10px;
+  margin-left:50px
+}
+.popup .right_nav .radio-area img
+{
+  width: 16px;
+  height: 16px;
+  float:left;
+  margin-right:3px;
+}
+.popup .right_nav .radio-area h1
+{
+  font-family:Yuan;
+  font-size: 16px;
+  margin-right:5px;
+  float:left;
+  line-height:1.3;
+}
+.popup .right_nav .radio-area input
+{
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #888888;
+  width: 16px;
+  height: 16px;
+  padding:0 0 0 34px;
+  margin-bottom:20px;
+  transition: background 0.3s ease-in-out;
+	float:left;
+}
+.popup .right_nav .radio-area  p
+{
+  font-family:Yuan;
+  font-size: 16px;
+  margin-left:1px;
+  margin-right:5px;
+  float:left;
+  line-height:1.35;
+}
+.popup .right_nav .button
+{
+    clear: both;
+    float: left;
+    margin-left: 50px;
+    margin-top:10px;
+    -webkit-appearance: none;
+    background: rgb(154, 63, 228);
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family:Yuan;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+    width: 255px;
+	  padding:0 50px 0 50px;
+	  font-weight: bold;
+}
+.popup .right_nav .button:hover
+{
+  	background: rgba(154, 63, 228,0.80);
+}
+.sir
+{
+  width:180px;
+	height:10px;
+  background-color:#FFF;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 136px;
+  font-family:Yuan;
+  font-size: 16px;
+  text-align: center;
+  line-height: 0.6;
+  display: none;
+}
+.sir:hover,.sur:hover
+{
+  color:rgb(154, 63, 228);
+  font-weight:bold;
+}
+.sur
+{
+  width:200px;
+  height:10px;
+  background-color:#FFF;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 112px;
+  font-family:Yuan;
+  font-size: 16px;
+  text-align: center;
+  line-height:2.3;
+  display: none;
 }
 /*---------------------------------------------------------*/
 .index-content
@@ -112,7 +395,7 @@
 .line-button
 {
   width:300px;
-  height:125px;
+  height:126px;
   border-radius: 200px 200px 0 0;
   margin:92px auto;
   margin-bottom: 0px;
@@ -153,6 +436,38 @@
     height:500px;
     margin:20px auto;
   }
+  .popup,  .popup .top_nav
+  {
+    width:770px;
+  }
+
+  .popup-title
+  {
+    margin-top: 25px;
+  }
+  .left_nav,.right_nav
+  {
+    width: 384px;
+    height:450px;
+  }
+  .divide-line
+  {
+    width:1px;
+    height:400px;
+    background-color:#DDDDDD;
+    margin-top:25px;
+    margin-left:0.5px;
+    float:left;
+  }
+  .popup .right_nav .type-area input,.popup .left_nav input
+  {
+    margin-bottom:15px;
+  }
+
+  .radio-area
+  {
+    margin-left:40px;
+  }
 
   .line-block
   {
@@ -162,7 +477,10 @@
   {
     font-size:18px;
   }
-
+  .popup .right_nav .button
+  {
+    margin-top:0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -179,9 +497,87 @@
   {
     font-size:16px;
   }
+ .popup .top_nav
+  {
+    background-color:#fff;
+    width:480px;
+  }
+  .popup
+   {
+      background-color: inherit;
+      width: 480px;
+      height: 500px;
+    }
 
+    .popup span {
+      display: block;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
 
-}
+    .popup .front {
+      -webkit-transform: rotateX(0deg) rotateY(0deg);
+      -moz-transform: rotateX(0deg) rotateY(0deg);
+      -ms-transform: rotateX(0deg) rotateY(0deg);
+      -o-transform: rotateX(0deg) rotateY(0deg);
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    .popup .front.hover {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+
+    .popup .behind {
+      position: absolute;
+      left: 0;
+      top: 46px;
+      width:480px;
+      height:500px;
+      -webkit-transform: rotateX(0deg) rotateY(180deg);
+      -moz-transform: rotateX(0deg) rotateY(180deg);
+      -ms-transform: rotateX(0deg) rotateY(180deg);
+      -o-transform: rotateX(0deg) rotateY(180deg);
+      transform: rotateX(0deg) rotateY(180deg);
+      display: none\9;
+    }
+
+    .popup .behind.hover {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+  .left_nav
+  {
+    position: relative;
+    width:480px;
+    height:500px;
+  }
+
+  .divide-line
+  {
+    display: none;
+  }
+  .sur,.sir
+  {
+    display:block;
+  }
 @media screen and (max-width: 480px) {
   #body
   {
@@ -193,4 +589,20 @@
     width:300px;
     margin-left:10px
   }
+  .left_nav
+  {
+    width:320px;
+  }
+  .popup .behind
+  {
+    width:320px;
+  }
+  .popup .top_nav
+   {
+     width:320px;
+   }
+   .popup
+    {
+       width: 3200px;
+    }
 }
