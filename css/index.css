@@ -187,6 +187,7 @@
   margin-right:30px;
   margin-top:45px;
   float: left;
+  cursor: pointer;
   background:url("../img/logo/google-1015752_960_720.png");
 }
 .facebook
@@ -196,6 +197,7 @@
   margin-right:30px;
   margin-top:45px;
   float: left;
+  cursor: pointer;
   background:url("../img/logo/facebook-512.png");
 }
 .twitter
@@ -205,6 +207,7 @@
   margin-right:30px;
   margin-top:45px;
   float: left;
+  cursor: pointer;
   background:url("../img/logo/697029-twitter-256.png");
 }
 .divide-line
@@ -405,6 +408,7 @@
   font-weight:bold;
   font-family: Yuan;
   line-height: 4.9;
+  cursor: pointer;
 }
 #body
 {
@@ -427,6 +431,7 @@
   font-family: Yuan;
   line-height: 2.5;
   float:left;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -499,6 +504,7 @@
   }
  .popup .top_nav
   {
+    border-bottom:1px solid #ebeaea;
     background-color:#fff;
     width:480px;
   }
@@ -603,6 +609,6 @@
    }
    .popup
     {
-       width: 3200px;
+    width: 320px;
     }
 }
