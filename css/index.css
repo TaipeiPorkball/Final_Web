@@ -213,7 +213,7 @@
 .popup .sign-in .left_nav input
 {
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #888888;
   font-family:Yuan;
   font-size: 16px;
@@ -252,7 +252,7 @@
     -webkit-appearance: none;
     background: rgb(154, 63, 228);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
     height: 50px;
@@ -292,7 +292,7 @@
   background-position: left 10px center;
   border: 1px solid #888888;
   color:#888888;
-  border-radius:10px;
+  border-radius: 5px;
 }
 .facebook
 {
@@ -311,7 +311,7 @@
   background:url("../img/logo/facebook-button.png");
   background-repeat: no-repeat;
   background-position: left -20px center;
-  border-radius:10px;
+  border-radius: 5px;
   background-color: #3a589e;
   border: 1px solid  #3a589e;
   color:#FFF;
@@ -336,7 +336,7 @@
   border: 1px solid #00aced;
   background-color: #00aced;
   color:#FFF;
-  border-radius:10px;
+  border-radius: 5px;
 }
 .sir
 {
@@ -398,7 +398,7 @@
 .popup .sign-up .left_nav  input
 {
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #888888;
   font-family:Yuan;
   font-size: 16px;
@@ -451,7 +451,7 @@
     -webkit-appearance: none;
     background: rgb(154, 63, 228);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
     height: 50px;
@@ -504,7 +504,7 @@
   width:300px;
   height:126px;
   border-radius: 200px 200px 0 0;
-  margin:92px auto;
+  margin:130px auto;
   margin-bottom: 0px;
   border: 3px solid black;
   text-align: center;
