@@ -5,71 +5,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css\index.css" type="text/css">
-  <link rel="stylesheet" href="css\reset.css" type="text/css">
+  <!--index's css-->
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <!--reset all tag-->
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
   <title>Final-Web</title>
+  <!--Firebase-->
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script type="text/javascript" src="js/login-data.js"></script>
+  <!--JQuery-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body Ondragstart="window.event.returnValue=false" onSelectStart="event.returnValue=false" ONCONTEXTMENU="window.event.returnValue=false">
+  <!--Icon-->
   <div class="icon">icon</div>
+  <!--Sign in and Sign up button-->
   <div class="logbutton">Sign in | Sign up</div>
   <div id="masking"></div>
+  <!--Pop out screen-->
   <div class="popup" id="popup">
+    <!--Top navigation-->
     <div class="top_nav" id='top_nav'>
       <img src="img\logo\login-rounded-right.png" alt="login icon">
       <span>Sign in | Sign up</span>
       <a class="exit" alt="exit"></a>
     </div>
-    <span class="left_nav front" id="left_nav">
-        <div class="popup-title">Sign in</div>
-        <form method="post" name="form_sign_in" target="_top" >
-         <input type="text" name="name_sign_in" id="name_sign_in" required="required" placeholder="Your Account" autocomplete="off" class="input-account-sign-in">
-				 <input type="password" name="pass_sign_in" id="pass_sign_in" required="required" placeholder="Your Password" autocomplete="off" class="input-password-sign-in">
-         <input type="submit" class="button" title="Sign In" value="Sign In">
-        </form>
-        <p class="sir">Want a New Account?</p>
-        <div class="mean">
-          <a href="">
-            <div alt="google login" class="google"></div>
-          </a>
-          <a href="">
-            <div alt="facebook login" class="facebook"></div>
-            </a>
-          <a href="">
-            <div alt="twitter login" class="twitter"></div>
-            </a>
-        </div>
-
-      </span>
-    <div class="divide-line"></div>
-    <span class="right_nav behind" id="right_nav">
+    <!--Sign In-->
+    <span class="sign-in front">
+   <div class="left_nav">
+     <div class="popup-title">Sign in</div>
+     <form action="#">
+       <input type="text" id="email" placeholder="Your E-mail" class="input-account-sign-in">
+       <input type="password" id="password" placeholder="Your Password" class="input-password-sign-in">
+     </form>
+     <button class="button" id="btnSignIn">Sign In</button>
+     <p class="sir">Want a New Account?</p>
+     <div class="mean">
+       <a href="">
+         <div class="google-icon"></div>
+       </a>
+       <a href="">
+         <div class="facebook-icon"></div>
+       </a>
+       <a href="">
+         <div class="twitter-icon"></div>
+       </a>
+     </div>
+       <div class="sign-info invisible" ></div>
+   </div>
+   <div class="background">
+     <div class="divide-line"></div>
+   </div>
+   <div class="right_nav" id="right_nav">
+      <div class="google">Sign In By Google</div>
+      <div class="facebook">Sign In By Facebook</div>
+      <div class="twitter">Sign In By Twitter</div>
+   </div>
+  </span>
+    <!--Sign Up-->
+    <span class="sign-up behind">
+        <div class="left_nav">
         <div class="popup-title">Sign up</div>
-        <form method="post" name="form_sign_up" target="_top" >
-          <div class="type-area">
-            <input type="text" name="name_sign_up" id="name_sign_up" required="required" placeholder="Your Account" autocomplete="off" class="input-account-sign-up">
-            <input type="password" name="pass_sign_up" id="pass_sign_up" required="required" placeholder="Your Password" autocomplete="off" class="input-password-sign-up">
-            <input type="password" name="pass_sign_up_confirm" id="pass_sign_up_confirm" required="required" placeholder="Password Check" autocomplete="off" class="input-password-sign-up-confirm">
-            <input type="text" name="nickname_sign_up" id="nickname_sign_up" required="required" placeholder="Your Nickname" autocomplete="off" class="input-nickname-sign-up">
+          <form action="#">
+              <input type="text" id="emailup" placeholder="Your E-mail" class="input-account-sign-up">
+              <input type="password" id="passwordup" placeholder="Your Password" class="input-password-sign-up">
+          <button class="button" id="btnSignUp">Sign Up</button>
+          </form>
+          <p class="sur">Already Have an Account?</p>
+          <div class="mean">
+            <a href="">
+              <div class="google-icon"></div>
+            </a>
+            <a href="">
+              <div class="facebook-icon"></div>
+            </a>
+            <a href="">
+              <div class="twitter-icon"></div>
+            </a>
           </div>
-         <div class="radio-area">
-           <img src="img\logo\Combotrans.png" alt="gender">
-           <h1>Gender :</h1>
-           <input type="radio" name="gender_sign_up" id="gender_sign_up" required="required"  autocomplete="off" class="input-gender-sign-up" value="M"><p>Male</p>
-           <input type="radio" name="gender_sign_up" id="gender_sign_up" required="required"  autocomplete="off" class="input-gender-sign-up" value="F"><p>Female</p>
-           <input type="radio" name="gender_sign_up" id="gender_sign_up" required="required"  autocomplete="off" class="input-gender-sign-up" value="O"><p>Other</p>
-         </div>
-        <input type="submit" class="button" title="Sign Up" value="Sign Up">
-        </form>
-        <p class="sur">Already Have an Account?</p>
-      </span>
-
-
+          <div class="sign-info invisible"></div>
+        </div>
+        <div class="background">
+          <div class="divide-line"></div>
+        </div>
+        <div class="right_nav" id="right_nav">
+          <div class="google">Sign Up By Google</div>
+          <div class="facebook">Sign Up By Facebook</div>
+          <div class="twitter">Sign Up By Twitter</div>
+        </div>
+   </span>
   </div>
-  </div>
+  <!--Content-->
   <div class="index-content">This area is text area.You can put your content in this area.This area is text area.You can put your content in this area.This area is text area.You can put your content in this area.This area is text area.You can put your content in this area.</div>
-
+  <!--Line Button to open option-->
   <div class="line-button">Line</div>
   <div id="body">
+    <!--Button-->
     <div class="line-block blue">Blue</div>
     <div class="line-block brown">Brown</div>
     <div class="line-block green">Green</div>
@@ -77,10 +109,13 @@
     <div class="line-block red">Red</div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js\slide-toggle.js"></script>
-  <script type="text/javascript" src="js\login-pop.js"></script>
-  <script type="text/javascript" src="js\login-flip.js"></script>
+  <!--Login-->
+  <script type="text/javascript" src="js/login-data.js"></script>
+  <script type="text/javascript" src="js/alert-fix.js"></script>
+  <!--Animation-->
+  <script type="text/javascript" src="js/slide-toggle.js"></script>
+  <script type="text/javascript" src="js/login-pop.js"></script>
+  <script type="text/javascript" src="js/login-flip.js"></script>
 </body>
 
 </html>
