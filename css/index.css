@@ -6,10 +6,7 @@
 {
   visibility: hidden;
 }
-.correct
-{
-  color:#00FF00;
-}
+
 .icon
 {
   width:150px;
@@ -138,7 +135,8 @@
   border-top:1px solid #ebeaea;
 }
 
-.sign-info{
+.sign-info
+{
   color: rgb(154, 63, 228);
   font-size: 16px;
   margin-top: 10px;
@@ -547,6 +545,7 @@
     height:500px;
     margin:20px auto;
   }
+
   .popup,  .popup .top_nav
   {
     width:770px;
@@ -560,7 +559,6 @@
   .popup .sign-in .left_nav .button,
   .popup .sign-up .left_nav input,
   .popup .sign-up .left_nav .button,
-  .sign-info-sign-in,.sign-info-sign-up
   {
     margin-left: 63px;
   }
@@ -589,11 +587,7 @@
     font-size: 25px;
     line-height: 2.43;
   }
-  .sign-info-sign-in,.sign-info-sign-up
-  {
-    width:280px;
-    margin-left: 52px;
-  }
+
   .popup .sign-in .left_nav input,
   .popup .sign-up .left_nav input
   {
@@ -607,7 +601,11 @@
   {
     font-size:18px;
   }
-
+  .sign-info
+  {
+    width:280px;
+    margin-left:52px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -636,11 +634,11 @@
   .popup .sign-in .left_nav .button,
   .popup .sign-up .left_nav input,
   .popup .sign-up .left_nav .button,
-  .sign-info-sign-in,.sign-info-sign-up,.mean
+  .mean
   {
     margin-left: 60px;
   }
-  .sign-info-sign-in,.sign-info-sign-up
+  .sign-info
   {
     width:360px;
   }
@@ -702,10 +700,10 @@
     margin-left: 50px;
     width:220px;
   }
-  .sign-info-sign-in,.sign-info-sign-up
+  .sign-info
   {
+    width: 280px;
     margin-left: 20px;
-    width:280px;
   }
   .sir
   {
