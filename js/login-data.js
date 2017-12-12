@@ -17,9 +17,9 @@ $(document).ready(function(){
   const $btnSignIn = $('#btnSignIn');
   const $btnSignUp = $('#btnSignUp');
   const $btnSignOut = $('#btnSignOut');
-  const $signInfo= $('.sign-info');
-
-
+  const $btnSubmit = $('#btnSubmit');
+  var $signInfo= $('.error-info');
+  var $loginInfo= $('.login-info');
   // SignIn
   $btnSignIn.click(function(e){
     const email = $email.val();
@@ -30,7 +30,8 @@ $(document).ready(function(){
     promise.catch(function(e){
       console.log(e.message);
       $signInfo.html(e.message);
-    });
+      setTimeout(function(){ $signInfo.html(" "); }, 1000); //important
+      });
   });
 
   // SignUp
@@ -43,6 +44,10 @@ $(document).ready(function(){
     promise.catch(function(e){
       console.log(e.message);
       $signInfo.html(e.message);
+      setTimeout(function(){ $signInfo.html(" "); }, 1000);
+    });
+    promise.then(function(e){
+      window.location.href = "./intro-submit.html";
     });
   });
 
@@ -57,6 +62,7 @@ $(document).ready(function(){
         console.log("  Name: "+profile.displayName);
         console.log("  Email: "+profile.email);
         console.log("  Photo URL: "+profile.photoURL);
+        setTimeout(function(){ $signInfo.html(" "); }, 1000);
       });
     } else {
       console.log("not logged in");
@@ -66,5 +72,20 @@ $(document).ready(function(){
   // Signout
   $btnSignOut.click(function(){
     firebase.auth().signOut();
+  });
+
+  $btnSubmit.click(function(){
+  const user = firebase.auth().currentUser;
+  const $userName = $('#userName').val();
+  const $photoURL = $('#photoURL').val();
+
+  const promise = user.updateProfile({
+    displayName: $userName,
+    photoURL: $photoURL
+  });
+  promise.then(function() {
+    console.log("Update successful.");
+    window.location.href = "./index.html";
+    });
   });
 });
