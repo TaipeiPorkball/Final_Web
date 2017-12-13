@@ -9,14 +9,13 @@
 .header
 {
   margin:0 auto;
-  border-bottom:2px solid #DDDDDD  ;
   width:1024px;
-  height:150px;
+  height:80px;
 }
 .language
 {
   margin-right:0px;
-  margin-top:85px;
+  margin-top:25px;
   -webkit-appearance: none;
   background: #FFF;
   border: 2px solid black;
@@ -44,47 +43,30 @@
   border: 2px solid black;
   cursor: default;
   position: relative;
-  background-color: #666666;
   transition: background 0.3s ease-in-out;
-
+  background:url(../img/logo/icon-default.png) repeat 0px 0px;
 }
-.icon p
-{
-  color:#FFF;
-  text-align: center;
-  font-size: 30px;
-  font-weight:bold;
-  font-family: Yuan;
-  line-height: 5.2;
-}
-.edit
+.profile
 {
   width:150px;
-  height:75px;
-  color:#666666;
-  background-color:#EEEEEE;
+  height:150px;
+  color:#FFF;
+  background-color:#000;
   text-align: center;
   font-size: 30px;
   font-weight:bold;
   font-family: Yuan;
   cursor: pointer;
   position: absolute;
-  right: -2px;
-  bottom:-2px;
-  line-height: 2.35;
-  border: 2px solid black;
-  border-radius:0 0 100px 100px;
+  right: 0px;
+  bottom:0px;
+  opacity: 0.7;
+  line-height: 5.5;
+  border-radius:100px;
   transition: background 0.3s ease-in-out;
   display:none;
 }
-.icon:hover
-{
-  opacity: 0.7;
-}
-.icon:hover p
-{
-  display: none;
-}
+
 .icon:hover div
 {
   display:block;
@@ -207,7 +189,8 @@
   float:left;
   border-top:1px solid #ebeaea;
 }
-.text-area
+
+.error-info
 {
   font-size: 16px;
   margin-top: 10px;
@@ -218,9 +201,6 @@
   float:left;
   line-height: 1.4;
   cursor:default;
-}
-.error-info
-{
   color:#FF0000;
 }
 .login-info
@@ -341,9 +321,9 @@
   height:60px;
   cursor: pointer;
   font-family:Yuan;
-  font-weight: bolder;
-  line-height:2.1;
-  font-size: 28px;
+  font-weight: 400;
+  line-height:2.7;
+  font-size: 22px;
   margin-left:70px;
   margin-top:90px;
   padding-left: 75px;
@@ -368,9 +348,9 @@
   height:60px;
   cursor: pointer;
   font-family:Yuan;
-  font-weight: bolder;
-  line-height:2.1;
-  font-size: 28px;
+  font-weight: 400;
+  line-height:2.7;
+  font-size: 22px;
   margin-left:70px;
   margin-top:25px;
   padding-left:75px;
@@ -393,9 +373,9 @@
   height:60px;
   cursor: pointer;
   font-family:Yuan;
-  font-weight: bolder;
-  line-height:2.1;
-  font-size: 28px;
+  font-weight: 400;
+  line-height:2.7;
+  font-size: 22px;
   margin-left:70px;
   margin-top:25px;
   padding-left:75px;
@@ -584,7 +564,7 @@
   width:300px;
   height:126px;
   border-radius: 200px 200px 0 0;
-  margin:50px auto;
+  margin:122px auto;
   margin-bottom: 0px;
   color:#888888;
   border: 2px solid black;
@@ -687,7 +667,7 @@
   {
     font-size:18px;
   }
-  .sign-info
+  .error-info
   {
     width:280px;
     margin-left:52px;
@@ -708,7 +688,7 @@
   {
     width:100px;
     height: 33.3px;
-    margin-top: 101.3px;
+    margin-top: 25px;
     font-size: 16px;
   }
   .index-content,.header
@@ -739,7 +719,7 @@
   {
     margin-left: 60px;
   }
-  .sign-info
+  .error-info
   {
     width:360px;
   }
@@ -810,7 +790,7 @@
     margin-left: 50px;
     width:220px;
   }
-  .sign-info
+  .error-info
   {
     width: 280px;
     margin-left: 20px;

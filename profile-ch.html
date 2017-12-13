@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--profile's css-->
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link rel="stylesheet" href="css/profile.css" type="text/css">
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+  <!--reset all tag-->
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <title>Personal Information Edit</title>
+
+  <!--Firebase-->
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script type="text/javascript" src="js/login-data.js"></script>
+
+  <!--JQuery-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body Ondragstart="window.event.returnValue=false" onSelectStart="event.returnValue=false" ONCONTEXTMENU="window.event.returnValue=false">
+  <!--icon-->
+  <div class="icon">
+    <div class="edit">編輯</div>
+  </div>
+  <!--nickname-->
+<div class="intro">
+ <div class="big-div">
+  <div class="tag mdl-shadow--4dp">
+    <p>顯示名稱</p>
+  </div>
+  <div class="tag-tri"></div>
+  <p class="train-info" id="profile-name">N/A</p>
+ </div>
+  <!-- E-mail -->
+  <div class="tag mdl-shadow--4dp">
+    <p>電子郵件</p>
+  </div>
+  <div class="tag-tri"></div>
+  <p class="train-info" id="profile-email">N/A</p>
+ </div>
+</div>
+  <!--About Me-->
+<div class="intro">
+
+ <div class="big-div">
+  <div class="tag mdl-shadow--4dp">
+    <p>關於我</p>
+  </div>
+  <div class="tag-tri">
+  </div>
+  <p class="column-page mdl-shadow--6dp" id="profile-about">N/A</p>
+ </div>
+  <!-- Article -->
+ <div class="big-div">
+  <div class="tag mdl-shadow--4dp">
+    <p>近期文章</p>
+  </div>
+  <div class="tag-tri"></div>
+  <p class="column-page mdl-shadow--6dp" id="profile-article">N/A</p>
+  </div>
+</div>
+<!--Favorite-->
+<div class="intro">
+
+<div class="big-div">
+<div class="tag mdl-shadow--4dp">
+  <p>我的最愛</p>
+</div>
+<div class="tag-tri">
+</div>
+<p class="column-page mdl-shadow--6dp" id="profile-favorite">N/A</p>
+</div>
+<!-- Article -->
+<div class="big-div">
+<div class="tag mdl-shadow--4dp">
+  <p>個人紀錄</p>
+</div>
+<div class="tag-tri"></div>
+<p class="column-page mdl-shadow--6dp" id="profile-record">N/A</p>
+</div>
+</div>
+<div class="footer"></div>
+  <!--Login-->
+  <script type="text/javascript" src="js/login-data-ch.js"></script>
+  <!--Animation-->
+  <script type="text/javascript" src="js/animation-submit.js"></script>
+</body>
+
+</html>

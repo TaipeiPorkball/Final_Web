@@ -1,0 +1,181 @@
+@font-face
+{
+  font-family: Yuan;
+  src: url("../font/GenJyuuGothic-Normal.ttf");
+}
+.icon
+{
+  width:150px;
+  height:150px;
+  border-radius: 100px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: 2px solid black;
+  cursor: default;
+  position: relative;
+  transition: background 0.3s ease-in-out;
+  background:url(../img/logo/icon-default.png) repeat 0px 0px;
+}
+.edit
+{
+  width:150px;
+  height:150px;
+  color:#FFF;
+  background-color:#000;
+  text-align: center;
+  font-size: 30px;
+  font-weight:bold;
+  font-family: Yuan;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  bottom:0px;
+  opacity: 0.7;
+  line-height: 5.5;
+  border-radius:100px;
+  transition: background 0.3s ease-in-out;
+  display:none;
+}
+.icon:hover div
+{
+  display:block;
+}
+.intro
+{
+  clear:both;
+  width:1024px;
+  margin:0 auto;
+  margin-top: 20px;
+}
+.big-div
+{
+  width:480px;
+  float:left;
+  margin-right: 30px;
+}
+.tag
+{
+    float: left;
+    width:130px;
+    height:40px;
+    background-color:	#77DDFF;
+    margin-top:30px;
+    margin-left:0px;
+    font-family:Yuan;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.0;
+    color:#FFF;
+}
+.tag-tri
+{
+  border-color: transparent transparent transparent 	#77DDFF;
+   border-style: solid solid solid solid;
+   border-width: 20px;
+   float:left;
+   margin-top:30px;
+   height: 0px;
+   width: 0px;
+}
+
+.train-info
+{
+  float:left;
+  margin-left:0px;
+  width:170px;
+  font-family:Yuan;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right:40px;
+  margin-top:40px;
+  line-height:0.8 ;
+}
+.column-page
+{
+  clear:both;
+  float:left;
+  margin-left:10px;
+  padding:20px;
+  margin-top:10px;
+  font-family:Yuan;
+  font-weight: bold;
+  font-size: 20px;
+  width:430px;
+  height:320px;
+  border:3px outset #CCEEFF;
+}
+.footer
+{
+  clear:both;
+  float:left;
+  width:100%;
+  height:100px;
+}
+@media screen and (max-width: 1024px) {
+  .intro
+  {
+    width:768px;
+  }
+  .big-div
+  {
+    width:350px;
+  }
+  .column-page
+  {
+    width:300px;
+    height:250px;
+    font-size:18px;
+  }
+  .train-info
+  {
+    margin-left:10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro
+  {
+    width:480px;
+  }
+  .big-div
+  {
+    width:480px;
+    clear:both;
+    float:left;
+  }
+  .column-page
+  {
+    width:415px;
+    height:350px;
+    font-size:20px;
+  }
+  .train-info
+  {
+    margin-left: 0px;
+    width:170px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro
+  {
+    width:320px;
+  }
+  .big-div
+  {
+    width:320px;
+    clear:both;
+    float:left;
+  }
+  .column-page
+  {
+    width:280px;
+    height:250px;
+    font-size:18px;
+  }
+  .train-info
+  {
+    width:170px;
+    margin-left: 10px;
+  }
+}

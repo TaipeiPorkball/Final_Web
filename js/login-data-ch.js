@@ -38,7 +38,7 @@ $(document).ready(function(){
       setTimeout(function(){ $signInfo.html(" "); }, 1000); //important
       });
       promise.then(function(e){
-        window.location.href = "./index-member.html";
+        window.location.href = "./index-ch-member.html";
         });
     });
 
@@ -55,7 +55,7 @@ $(document).ready(function(){
       setTimeout(function(){ $signInfo.html(" "); }, 1000);
     });
     promise.then(function(e){
-      window.location.href = "./index-member.html";
+      window.location.href = "./index-ch-member.html";
       });
   });
 
@@ -63,6 +63,7 @@ $(document).ready(function(){
   firebase.auth().onAuthStateChanged(function(user){
     if(user) {
       console.log(user);
+      const loginName = user.displayName || user.email;
       $profileName.html(user.displayName);
       $profileEmail.html(user.email);
       $img.attr("src",user.photoURL);
@@ -84,7 +85,7 @@ $(document).ready(function(){
   // Signout
   $btnSignOut.click(function(){
     firebase.auth().signOut();
-    window.location.href = "./index.html";
+    window.location.href = "./index-ch.html";
   });
 
   $btnSubmit.click(function(){
@@ -98,7 +99,7 @@ $(document).ready(function(){
   });
   promise.then(function() {
     console.log("Update successful.");
-    window.location.href = "./index.html";
+    window.location.href = "./index-ch.html";
     });
   });
 });
