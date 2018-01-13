@@ -2,6 +2,16 @@
   font-family: Yuan;
   src: url("../font/GenJyuuGothic-Normal.ttf");
 }
+@font-face {
+  font-family: Comic Sans;
+  src: url("../font/911Fonts.com_ComicSansMSRegular__-_911fonts.com_fonts_BpCS.ttf");
+}
+body
+{
+  background: url("../img/index.png");
+  background-position:center top;
+  background-repeat: no-repeat;
+}
 .invisible
 {
   visibility: hidden;
@@ -17,20 +27,30 @@
   margin-right:0px;
   margin-top:25px;
   -webkit-appearance: none;
-  background: #FFF;
-  border: 2px solid black;
-  border-radius: 5px;
-  color:#888888;
+  background: #AAA;
+  border-radius: 15px;
   cursor: pointer;
   width:120px;
   height: 50px;
-  font-family:Yuan;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 0.05em;
   text-align: center;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.2s ease-in-out;
+  opacity:0.7;
   float:right;
+}
+.language p
+{
+  font-family:Yuan;
+  font-weight: bolder;
+  color:#333;
+  font-size: 20px;
+  line-height: 2.5;
+  opacity:1.0;
+}
+.language:hover
+{
+
+  background: #CCC;
+
 }
 .icon
 {
@@ -39,12 +59,12 @@
   border-radius: 100px;
   margin-left:auto;
   margin-right: auto;
-  margin-top: 50px;
-  border: 2px solid black;
+  margin-top: 30px;
+  border: 2px solid white;
   cursor: default;
   position: relative;
-  transition: background 0.3s ease-in-out;
-  background:url(../img/logo/icon-default.png) repeat 0px 0px;
+  transition: background 0.5s ease-in-out;
+  background:url(../img/logo/icon-default.png) repeat 0px 10px;
 }
 .profile
 {
@@ -63,7 +83,7 @@
   opacity: 0.7;
   line-height: 5.5;
   border-radius:100px;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
   display:none;
 }
 
@@ -76,29 +96,29 @@
 {
   width:200px;
   height:50px;
-  border-radius:10px;
-  margin:40px auto;
-  border: 2px solid black;
-  color:#888888;
+  border-radius:15px;
+  margin:30px auto;
+  background:#FFE34B;
+  color:#d86a08;
   text-align: center;
   font-size: 20px;
   font-weight:bold;
-  font-family: Yuan;
+  font-family:Comic Sans,Yuan;
   line-height:2.4;
   cursor:pointer;
   clear:both;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
-.logbutton:hover,.line-button:hover,
-.line-block:hover,.language:hover
+.logbutton:hover
 {
-  background-color:#EEEEEE;
+  background:#FFF45C;
+
 }
 #masking
 {
 	width:100%;
 	height:100%;
-	background:rgba(0,0,0,0.3);
+	background:rgba(0,0,0,0.7);
 	position:fixed;
 	top:0px;
 	display:none;
@@ -262,7 +282,7 @@
   padding:0 0 0 34px;
 	margin-left:70px;;
   margin-bottom:20px;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
   width: 220px;
 	float:left;
 }
@@ -304,7 +324,7 @@
     text-transform: uppercase;
     margin-top: 20px;
     margin-left:70px;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.5s ease-in-out;
     width: 255px;
 	  padding:0 50px 0 50px;
 	  font-weight: bold;
@@ -336,7 +356,7 @@
   color:#888888;
   border-radius: 5px;
   opacity: 0.85;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 .google:hover,.facebook:hover,.twitter:hover
 {
@@ -364,7 +384,7 @@
   border: 1px solid  #3a589e;
   color:#FFF;
   opacity: 0.85;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
 .twitter
@@ -389,7 +409,7 @@
   color:#FFF;
   border-radius: 5px;
   opacity: 0.85;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 .sir
 {
@@ -462,7 +482,7 @@
   padding:0 0 0 34px;
 	margin-left:70px;
   margin-bottom:20px;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
   width: 220px;
 	float:left;
   border-top:1px solid #ebeaea;
@@ -516,7 +536,7 @@
     letter-spacing: 0.05em;
     text-align: center;
     text-transform: uppercase;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.5s ease-in-out;
     width: 255px;
 	  padding:0 50px 0 50px;
 	  font-weight: bold;
@@ -548,32 +568,72 @@
 {
   width:1024px;
   border-radius:10px;
-  margin:44px auto;
-  border: 1.45px solid black;
-  color:#888888;
+  margin:170px auto;
   text-align: center;
-  font-size: 20px;
-  font-family: Yuan;
   line-height:1.6;
   clear:both;
   cursor:default;
 }
+.index-content .metro
+{
+  letter-spacing: 5px;
+  font-family: Comic Sans,Yuan;
+  text-shadow:3px 3px #000;
+  color:#FFF;
+  font-weight: bolder;
+  font-size:100px;
+}
+.index-content .quote
+{
+  letter-spacing: 2px;
+  margin-top: 60px;
+  font-family: Comic Sans,Yuan;
+  text-shadow:3px 3px #000;
+  color:#c6dbe4;
+  font-size:30px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
 .line-button
 {
-  transition: background 0.3s ease-in-out;
-  width:300px;
-  height:126px;
-  border-radius: 200px 200px 0 0;
-  margin:122px auto;
+  width:602px;
+  height:173px;
+  margin:226px auto;
   margin-bottom: 0px;
-  color:#888888;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 30px;
-  font-weight:bold;
-  font-family: Yuan;
-  line-height: 4.9;
-  cursor: pointer;
+  position:relative;
+}
+.line-button p
+{
+  font-family: Comic Sans,Yuan;
+  text-shadow:3px 3px #000;
+  text-align:center;
+  line-height:2.0;
+  color:#BBB;
+  font-size:90px;
+  z-index: 10000000000000;
+}
+.line-button img
+{
+  width:602px;
+  height:173px;
+  position:absolute;
+  opacity: 0.45;
+  top:0px;
+  left:0px;
+  /* CSS3淡出淡入效果,1秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.line-button img:nth-of-type(2)
+{
+  opacity:0;
+}
+.line-button img:nth-of-type(2):hover
+{
+  opacity:0.45;/*滑鼠滑入時，透明度變0*/
 }
 #body
 {
@@ -585,7 +645,7 @@
 
 .line-block
 {
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
   width:300px;
   height:125px;
   margin-left: 27px;
@@ -600,7 +660,19 @@
   float:left;
   cursor: pointer;
 }
-
+.chinese
+{
+  margin-top:268px;
+}
+.ToP
+{
+  position: fixed;
+  visibility: hidden;
+  width:50px;
+  height: 50px;
+  right: 0px;
+  bottom:0px;
+}
 @media screen and (max-width: 1024px) {
   #body
   {
@@ -608,7 +680,10 @@
     height:500px;
     margin:20px auto;
   }
-
+  .ToP
+  {
+    visibility: hidden;
+  }
   .popup,  .popup .top_nav
   {
     width:770px;
@@ -676,9 +751,51 @@
   {
     margin-left: 185px;
   }
+  .line-button
+  {
+    margin:255px auto;
+    margin-bottom: 0px;
+  }
+  .index-content .metro
+  {
+    font-size:80px;
+  }
+  .index-content .quote
+  {
+    margin-top: 48px;
+    font-size:24px;
+  }
+
+  .line-button
+  {
+    width:496px;
+    height:138.4px;
+    margin-top:288px;
+  }
+  .line-button img
+  {
+    width:496px;
+    height:138.4px;
+    position:absolute;
+  }
+  .line-button p
+  {
+    line-height:2.0;
+    font-size:72px;
+  }
+  .chinese
+  {
+    margin-top:322px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  body
+  {
+    background: url("../img/index-small.png");
+    background-position:center top;
+    background-repeat: no-repeat;
+  }
   #body
   {
     width:480px;
@@ -690,6 +807,10 @@
     height: 33.3px;
     margin-top: 25px;
     font-size: 16px;
+  }
+  .language p
+  {
+    line-height: 1.7;
   }
   .index-content,.header
   {
@@ -746,8 +867,54 @@
   {
     margin-left: 175px;
   }
+  .index-content
+  {
+    margin:60px auto;
+  }
+  .index-content .metro
+  {
+    width:480px;
+    font-size:53px;
+  }
+  .index-content .quote
+  {
+    margin-top: 48px;
+    font-size:19px;
+  }
+
+  .line-button
+  {
+    width:400px;
+    height:114.95px;
+    margin-top:65px;
+  }
+  .line-button img
+  {
+    width:400px;
+    height:114.95px;
+    position:absolute;
+  }
+  .line-button p
+  {
+    line-height:2.0;
+    font-size:60px;
+  }
+  .chinese
+  {
+    margin-top:91px;
+  }
+  .ToP
+  {
+    visibility: visible;
+  }
 }
 @media screen and (max-width: 480px) {
+  body
+  {
+    background: url("../img/index-small.png");
+    background-position:center top;
+    background-repeat: no-repeat;
+  }
   #body
   {
     width:320px;
@@ -812,4 +979,41 @@
   {
     margin-left:130px;
   }
+  .index-content
+  {
+    margin:50px auto;
+  }
+  .index-content .metro
+  {
+    width:340px;
+    font-size:28px;
+  }
+  .index-content .quote
+  {
+    margin-top: 48px;
+    font-size:19px;
+  }
+
+  .line-button
+  {
+    width:300px;
+    height:86.212px;
+    margin-top:77px;
+  }
+  .line-button img
+  {
+    width:300px;
+    height:86.212px;
+    position:absolute;
+  }
+  .line-button p
+  {
+    line-height:2.0;
+    font-size:48px;
+  }
+  .chinese
+  {
+    margin-top:103px;
+  }
+
 }
