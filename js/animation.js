@@ -68,15 +68,13 @@ $(function() {
 $(function(){
 
  $(".ToP").click(function(){
-     jQuery("html,body").animate({
-     scrollTop:0
-   },1500);
- });
- $(window).scroll(function() {
-    if ( $(this).scrollTop() > 710){
-       $('.ToP').fadeIn("fast");
-    } else {
-       $('.ToP').stop().fadeOut("fast");
-    }
+   $("#body").slideToggle("slow");
+   if (time % 2 == 0) {
+     $("body,html").animate({
+       scrollTop: 1500 // Scroll 500px from top of body
+     }, 1500);
+   }
+   time = time + 1;
+   //how fast the scrolling animation will be in miliseconds
  });
  });

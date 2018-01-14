@@ -9,6 +9,7 @@
 body
 {
   background: url("../img/index.png");
+  background-attachment: scroll;
   background-position:center top;
   background-repeat: no-repeat;
 }
@@ -64,6 +65,20 @@ body
   cursor: default;
   position: relative;
   transition: background 0.5s ease-in-out;
+  background:url(../img/logo/logo.png) no-repeat 0px 0px;
+}
+.icon-login
+{
+  width:150px;
+  height:150px;
+  border-radius: 100px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border: 2px solid white;
+  cursor: default;
+  position: relative;
+  transition: background 0.5s ease-in-out;
   background:url(../img/logo/icon-default.png) repeat 0px 10px;
 }
 .profile
@@ -87,7 +102,7 @@ body
   display:none;
 }
 
-.icon:hover div
+.icon-login:hover div
 {
   display:block;
 }
@@ -100,6 +115,7 @@ body
   margin:30px auto;
   background:#FFE34B;
   color:#d86a08;
+  text-shadow:1px 1px #FFF;
   text-align: center;
   font-size: 20px;
   font-weight:bold;
@@ -600,18 +616,27 @@ body
   width:602px;
   height:173px;
   margin:226px auto;
-  margin-bottom: 0px;
+  margin-bottom:0px;
   position:relative;
+  padding: 0;
+  cursor: pointer;
 }
+
 .line-button p
 {
+  position:absolute;
+  left:215px;
+  top:85px;
   font-family: Comic Sans,Yuan;
   text-shadow:3px 3px #000;
   text-align:center;
-  line-height:2.0;
   color:#BBB;
   font-size:90px;
-  z-index: 10000000000000;
+  z-index: 10;
+}
+.english p
+{
+  left:190px;
 }
 .line-button img
 {
@@ -622,10 +647,10 @@ body
   top:0px;
   left:0px;
   /* CSS3淡出淡入效果,1秒 */
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 .line-button img:nth-of-type(2)
 {
@@ -637,52 +662,116 @@ body
 }
 #body
 {
+ background: url("../img/Line-background.png");
+ background-position:center bottom;
+ background-repeat: no-repeat;
+ position:relative;
+ width:100%;
+ display:none;
+}
+.backhand
+{
   width:1024px;
-  height: 350px;
-  margin:20px auto;
-  display:none;
+  height:500px;
+  margin:0px auto;
+  padding-top: 150px;
 }
 
 .line-block
 {
+  perspective:800px;
   transition: background 0.5s ease-in-out;
   width:300px;
-  height:125px;
-  margin-left: 27px;
-  margin-top: 27px;
-  border: 2px solid black;
-  color:#888888;
-  text-align: center;
-  font-size: 50px;
-  font-weight:bold;
-  font-family: Yuan;
-  line-height: 2.5;
+  height:150px;
+  margin-left:32px;
+  margin-top:32px;
   float:left;
   cursor: pointer;
 }
+.block {
+  height: 150px;
+  perspective:800px;
+  transition: transform 0.5s ease-out;
+  transform-style: preserve-3d;
+  position:relative;
+  cursor:pointer;
+}
+
+.block div {
+  color:#FFF;
+  text-shadow:2px 2px #AAA;
+  text-align: center;
+  font-size: 50px;
+  font-weight:bold;
+  font-family: Comic Sans,Yuan;
+  line-height: 2.8;
+  width:100%;
+  height:150px;
+  border-radius:10px;
+  text-align: center;
+  backface-visibility: hidden;
+  position:absolute;
+}
+
+.block .backface {
+
+  transform: rotateY( 180deg );
+}
+.block:hover{
+  transform: rotateY( 180deg );
+}
+
+.large
+{
+  margin-left:180px;
+}
+.brown
+{
+  background-color: #9b5b18;
+}
+.blue
+{
+  background-color: #3c71a2;
+}
+.green
+{
+  background-color: #589842;
+}
+.orange
+{
+  background-color: #eea009;
+}
+.red
+{
+  background-color:#ae2525;
+}
 .chinese
 {
-  margin-top:268px;
+  margin-top:267px;
 }
 .ToP
 {
-  position: fixed;
   visibility: hidden;
+  position:absolute;
   width:50px;
-  height: 50px;
-  right: 0px;
-  bottom:0px;
+  height:50px;
+  right: 10px;
+  bottom: 10px;
 }
 @media screen and (max-width: 1024px) {
-  #body
+  .backhand
   {
     width:768px;
-    height:500px;
-    margin:20px auto;
+    height:600px;
+    padding-top: 20px;
   }
-  .ToP
+  .mideum
   {
-    visibility: hidden;
+    margin-left:220px;
+  }
+  .large
+  {
+    margin-left:32px
   }
   .popup,  .popup .top_nav
   {
@@ -780,8 +869,13 @@ body
   }
   .line-button p
   {
-    line-height:2.0;
+    left:175px;
+    top:65px;
     font-size:72px;
+  }
+  .english p
+  {
+    left:160px;
   }
   .chinese
   {
@@ -790,16 +884,33 @@ body
 }
 
 @media screen and (max-width: 768px) {
+  #body
+  {
+   background: url("../img/line-body.png");
+   background-position:center bottom;
+   background-repeat: no-repeat;
+   width:100%;
+   display:none;
+  }
+  .ToP
+  {
+    visibility: visible;
+  }
   body
   {
     background: url("../img/index-small.png");
     background-position:center top;
     background-repeat: no-repeat;
   }
-  #body
+  .mideum
+  {
+    margin-left:32px;
+  }
+  .backhand
   {
     width:480px;
-    height:600px;
+    height:940px;
+    padding-top: 0px;
   }
   .language
   {
@@ -886,7 +997,7 @@ body
   {
     width:400px;
     height:114.95px;
-    margin-top:65px;
+    margin-top:86px;
   }
   .line-button img
   {
@@ -896,16 +1007,17 @@ body
   }
   .line-button p
   {
-    line-height:2.0;
     font-size:60px;
+    left:142px;
+    top:55px;
+  }
+  .english p
+  {
+    left:130px;
   }
   .chinese
   {
-    margin-top:91px;
-  }
-  .ToP
-  {
-    visibility: visible;
+    margin-top:112px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -915,10 +1027,10 @@ body
     background-position:center top;
     background-repeat: no-repeat;
   }
-  #body
+  .backhand
   {
     width:320px;
-    height:600px;
+    height:940px;
   }
   .index-content,.header
   {
@@ -985,20 +1097,22 @@ body
   }
   .index-content .metro
   {
+    text-align: left;
     width:340px;
-    font-size:28px;
+    font-size:33px;
   }
+
   .index-content .quote
   {
-    margin-top: 48px;
-    font-size:19px;
+    margin-top: 30px;
+    font-size:11px;
   }
 
   .line-button
   {
     width:300px;
     height:86.212px;
-    margin-top:77px;
+    margin-top:165px;
   }
   .line-button img
   {
@@ -1008,12 +1122,25 @@ body
   }
   .line-button p
   {
-    line-height:2.0;
     font-size:48px;
+    left:100px;
+    top:35px;
+  }
+  .english p
+  {
+    left:90px;
   }
   .chinese
   {
-    margin-top:103px;
+    margin-top:173px;
   }
-
+  .index-content .chtitle
+  {
+    font-size:36px;
+  }
+  .index-content .chtext
+  {
+    margin-top: 30px;
+    font-size:16px;
+  }
 }
