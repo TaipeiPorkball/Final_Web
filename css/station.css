@@ -41,15 +41,15 @@ html
 .ham-list
 {
  position: fixed;
- right:60px;
+ right:55px;
  bottom:210px;
- background-color:white;
  border-radius: 10px;
+ display: none;
 }
 .ham-list img
 {
   background-color:white;
-  border-radius: 10px;
+  border-radius: 100px;
   margin-bottom: 5px;
   width:70px;
   height:70px;
@@ -64,7 +64,7 @@ html
   right:60px;
   bottom:130px;
   cursor: pointer;
-  display: none;
+
 }
 .hamburger div{
   width:70px;
