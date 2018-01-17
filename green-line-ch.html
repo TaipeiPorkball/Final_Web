@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--index's css-->
+  <link rel="stylesheet" href="css/line.css" type="text/css">
+  <link rel="stylesheet" href="css/green.css" type="text/css">
+  <!--reset all tag-->
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <title>松山新店線</title>
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+  <!--Firebase-->
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+  <!--JQuery-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body Ondragstart="window.event.returnValue=false" onSelectStart="event.returnValue=false" ONCONTEXTMENU="window.event.returnValue=false">
+  <div id="masking"></div>
+  <!--Pop out screen-->
+  <div class="popup" id="popup">
+    <!--Top navigation-->
+    <div class="top_nav" id='top_nav'>
+      <a class="exit" alt="exit"></a>
+    </div>
+    <!--Sign In-->
+    <span class="sign-in front">
+    <div class="left_nav">
+     <div class="popup-title">登入</div>
+     <form>
+       <input type="text" id="email" placeholder="輸入您的信箱" class="input-account-sign-in">
+       <input type="password" id="password" placeholder="輸入您的密碼" class="input-password-sign-in">
+     </form>
+     <button class="button" id="btnSignIn">登入</button>
+     <p class="sir sir-ch">需要一個新帳號嗎？</p>
+     <div class="mean">
+       <a href="">
+         <div class="google-icon"></div>
+       </a>
+       <a href="">
+         <div class="facebook-icon"></div>
+       </a>
+       <a href="">
+         <div class="twitter-icon"></div>
+       </a>
+     </div>
+     <div class="text-area">
+       <p class="error-info"></p>
+       <p class="login-info"></p>
+     </div>
+    </div>
+   <div class="background">
+     <div class="divide-line"></div>
+   </div>
+   <div class="right_nav" id="right_nav">
+      <div class="google mdl-shadow--2dp hover-shadow">使用 Google 登入</div>
+      <div class="facebook mdl-shadow--2dp hover-shadow">使用 Facebook 登入</div>
+      <div class="twitter mdl-shadow--2dp hover-shadow">使用 Twitter 登入</div>
+   </div>
+  </span>
+    <!--Sign Up-->
+    <span class="sign-up behind">
+        <div class="left_nav">
+        <div class="popup-title">註冊</div>
+          <form>
+              <input type="text" id="emailup" placeholder="輸入您的信箱" class="input-account-sign-up">
+              <input type="password" id="passwordup" placeholder="輸入您的密碼" class="input-password-sign-up">
+          </form>
+          <button class="button" id="btnSignUp">註冊</button>
+          <p class="sur sur-ch">已經有個帳號了嗎？</p>
+          <div class="mean">
+            <a href="">
+              <div class="google-icon"></div>
+            </a>
+            <a href="">
+              <div class="facebook-icon"></div>
+            </a>
+            <a href="">
+              <div class="twitter-icon"></div>
+            </a>
+          </div>
+          <div class="text-area">
+            <p class="error-info"></p>
+            <p class="login-info"></p>
+          </div>
+          </div>
+        <div class="background">
+          <div class="divide-line"></div>
+        </div>
+        <div class="right_nav" id="right_nav">
+          <div class="google mdl-shadow--2dp hover-shadow">使用 Google 註冊</div>
+          <div class="facebook mdl-shadow--2dp hover-shadow">使用 Facebook 註冊</div>
+          <div class="twitter mdl-shadow--2dp hover-shadow">使用 Twitter 註冊</div>
+       </div>
+   </span>
+  </div>
+<header class="green mdl-shadow--6dp">
+  <div class="header-main">
+    <!--Title-->
+  <p class="title ch-left big">悠遊卡</p>
+  <!--Icon-->
+  <a href="index-ch.html">
+    <div class="icon"></div>
+  </a>
+  <!--Title-->
+  <p class="title small">悠遊卡的捷運旅行</p>
+  <p class="title big">捷運旅行</p>
+  <div class="profile">
+    <div class="more">
+      <div class="option_title">&nbsp;&nbsp;&nbsp;&nbsp;用戶名稱</div>
+      <div class="option logbutton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登入 | 註冊</div>
+
+      <a href="help.html">
+        <div class="option">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幫助</div>
+      </a>
+      <a href="green-line.html">
+        <div class="option">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change to English</div>
+      </a>
+    </div>
+  </div>
+</div>
+</header>
+<div class="main">
+  <div class="station-choice" alt="choose station">
+    <img src="img\Mrt-line.jpg">
+    <img src="img\Mrt-line.jpg">
+  </div>
+<div class="backhand">
+<!--Button-->
+
+<a href="brown-line-ch.html">
+  <div class="line-block chinese">
+    <div class="block">
+      <div class="brown mdl-shadow--6dp surface">淡水信義線</div>
+      <div class="brown mdl-shadow--6dp backface">貼文數:N/A</div>
+   </div>
+   </div>
+ </a>
+ <a href="red-line-ch.html">
+   <div class="line-block medium-right chinese">
+     <div class="block">
+       <div class="red mdl-shadow--6dp surface">淡水信義線</div>
+       <div class="red mdl-shadow--6dp backface">貼文數:N/A</div>
+     </div>
+    </div>
+ </a>
+ <a href="orange-line-ch.html">
+    <div class="line-block chinese">
+      <div class="block">
+        <div class="orange mdl-shadow--6dp surface">中和新蘆線</div>
+        <div class="orange mdl-shadow--6dp backface">貼文數:N/A</div>
+     </div>
+     </div>
+ </a>
+
+<a href="blue-line-ch.html">
+ <div class="line-block right medium-right chinese">
+   <div class="block">
+     <div class="blue mdl-shadow--6dp surface">板南線</div>
+     <div class="blue mdl-shadow--6dp backface">貼文數:N/A</div>
+  </div>
+  </div>
+</a>
+</div>
+<div class="nav-small">
+<!--Button-->
+<a href="brown-line-ch.html">
+ <div class="brown mdl-shadow--6dp circle-option"></div>
+</a>
+<a href="red-line-ch.html">
+  <div class="red mdl-shadow--6dp circle-option"></div>
+</a>
+<div class="green mdl-shadow--6dp circle-option-click"></div>
+<a href="orange-line-ch.html">
+  <div class="orange mdl-shadow--6dp circle-option"></div>
+</a>
+<a href="blue-line-ch.html">
+  <div class="blue mdl-shadow--6dp circle-option"></div>
+</a>
+</div>
+</div>
+<p class="location">臺北小巨蛋站─臺北小巨蛋</p>
+<img src="img\logo\icon-scrollup-white.png" alt="scroll to the top" id="top">
+  <!--Login-->
+  <script type="text/javascript" src="js/login-data-ch-green.js"></script>
+  <!--Animation-->
+  <script type="text/javascript" src="js/animation-line.js"></script>
+</body>
+</html>

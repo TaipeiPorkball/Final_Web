@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--index's css-->
+  <link rel="stylesheet" href="css/line.css" type="text/css">
+  <!--reset all tag-->
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <title>Red Line</title>
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+  <!--Firebase-->
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+  <!--JQuery-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body Ondragstart="window.event.returnValue=false" onSelectStart="event.returnValue=false" ONCONTEXTMENU="window.event.returnValue=false">
+<header class="red mdl-shadow--6dp">
+  <div class="header-main">
+    <!--Title-->
+  <p class="title left big">TRAVEL</p>
+  <!--Icon-->
+  <a href="index-member.html">
+    <div class="icon"></div>
+  </a>
+  <!--Title-->
+  <p class="title small">TRAVEL BY MRT</p>
+  <p class="title big">BY MRT</p>
+  <div class="profile">
+    <div class="more">
+      <div class="option_title">&nbsp;&nbsp;&nbsp;&nbsp;User Name</div>
+      <div class="option" id="btnSignOut">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout</div>
+
+      <a href="help.html">
+        <div class="option">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</div>
+      </a>
+      <a href="red-line-ch-member.html">
+        <div class="option">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;切換至中文</div>
+      </a>
+    </div>
+  </div>
+</div>
+</header>
+<div class="main">
+  <a href="zhongshan.html">
+    <div class="zhongshan"></div>
+  </a>
+  <div class="station-choice" alt="choose station">
+    <img src="img\Mrt-line.jpg">
+    <img src="img\Mrt-line.jpg">
+  </div>
+<div class="backhand">
+<!--Button-->
+
+<a href="brown-line-member.html">
+  <div class="line-block">
+  <div class="block">
+   <div class="brown mdl-shadow--6dp surface">Brown</div>
+   <div class="brown mdl-shadow--6dp backface">Post:N/A</div>
+ </div>
+ </div>
+</a>
+<a href="green-line-member.html">
+  <div class="line-block medium-right">
+    <div class="block">
+     <div class="green mdl-shadow--6dp surface">Green</div>
+     <div class="green mdl-shadow--6dp backface">Post:N/A</div>
+   </div>
+   </div>
+</a>
+<a href="orange-line-member.html">
+  <div class="line-block">
+    <div class="block">
+     <div class="orange mdl-shadow--6dp surface">Orange</div>
+     <div class="orange mdl-shadow--6dp backface">Post:N/A</div>
+   </div>
+   </div>
+</a>
+<a href="blue-line-member.html">
+  <div class="line-block right medium-right">
+    <div class="block">
+     <div class="blue mdl-shadow--6dp surface">Blue</div>
+     <div class="blue mdl-shadow--6dp backface">Post:N/A</div>
+   </div>
+   </div>
+</a>
+</div>
+<div class="nav-small">
+<!--Button-->
+
+<a href="brown-line-member.html">
+  <div class="brown mdl-shadow--6dp circle-option"></div>
+</a>
+<div class="red mdl-shadow--6dp circle-option-click"></div>
+<a href="green-line-member.html">
+  <div class="green mdl-shadow--6dp circle-option"></div>
+</a>
+<a href="orange-line-member.html">
+  <div class="orange mdl-shadow--6dp circle-option"></div>
+</a>
+<a href="blue-line-member.html">
+  <div class="blue mdl-shadow--6dp circle-option"></div>
+</a>
+</div>
+</div>
+<p class="location">Taipei 101/World Trade Center─Taipei 101</p>
+<img src="img\logo\icon-scrollup-white.png" alt="scroll to the top" id="top">
+  <!--Login-->
+  <script type="text/javascript" src="js/login-data-red.js"></script>
+  <!--Animation-->
+  <script type="text/javascript" src="js/animation-line.js"></script>
+</body>
+</html>

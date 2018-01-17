@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
   font-family: Yuan;
   src: url("../font/GenJyuuGothic-Normal.ttf");
 }
@@ -9,7 +9,6 @@
 body
 {
   background: url("../img/index.png");
-  background-attachment: scroll;
   background-position:center top;
   background-repeat: no-repeat;
 }
@@ -230,7 +229,7 @@ body
 {
   font-size: 16px;
   margin-top: 10px;
-  margin-left: 70px;
+  margin-left: 120px;
   font-family: Yuan;
   width:371px;
   clear:both;
@@ -282,8 +281,8 @@ body
   font-weight:bold;
   font-family: Yuan;
   margin-left:70px;
-  margin-top:50px;
-  margin-bottom:35px;
+  margin-top:40px;
+  margin-bottom:50px;
   color:#888888;
   cursor:default;
 }
@@ -296,10 +295,10 @@ body
   font-size: 16px;
   height: 40px;
   padding:0 0 0 34px;
-	margin-left:70px;;
+	margin-left:100px;
   margin-bottom:20px;
   transition: background 0.5s ease-in-out;
-  width: 220px;
+  width: 270px;
 	float:left;
 }
 .popup .sign-in .left_nav input:focus
@@ -339,9 +338,9 @@ body
     text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
-    margin-left:70px;
+    margin-left:100px;
     transition: background 0.5s ease-in-out;
-    width: 255px;
+    width: 305px;
 	  padding:0 50px 0 50px;
 	  font-weight: bold;
 }
@@ -361,7 +360,7 @@ body
   line-height:2.7;
   font-size: 22px;
   margin-left:70px;
-  margin-top:90px;
+  margin-top:105px;
   padding-left: 75px;
   float: left;
   cursor: pointer;
@@ -433,11 +432,11 @@ body
   font-family:Yuan;
   font-size: 16px;
   line-height: 2.2;
-  margin-left: 167px;
+  margin-left:247px;
 }
 .sir-ch
 {
-  margin-left: 185px;
+  margin-left: 265px;
 }
 .mean
 {
@@ -496,10 +495,10 @@ body
   font-size: 16px;
   height: 40px;
   padding:0 0 0 34px;
-	margin-left:70px;
+	margin-left:100px;
   margin-bottom:20px;
   transition: background 0.5s ease-in-out;
-  width: 220px;
+  width: 270px;
 	float:left;
   border-top:1px solid #ebeaea;
 }
@@ -538,7 +537,7 @@ body
 {
     clear: both;
     float: left;
-    margin-left: 70px;
+    margin-left:100px;
     margin-top:20px;
     -webkit-appearance: none;
     background: rgb(154, 63, 228);
@@ -553,7 +552,7 @@ body
     text-align: center;
     text-transform: uppercase;
     transition: background 0.5s ease-in-out;
-    width: 255px;
+    width: 305px;
 	  padding:0 50px 0 50px;
 	  font-weight: bold;
 }
@@ -570,20 +569,19 @@ body
 {
   clear: both;
   cursor: pointer;
-  margin-left: 135px;
+  margin-left: 215px;
   font-family:Yuan;
   font-size: 16px;
   line-height:2.3;
 }
 .sur-ch
 {
-  margin-left: 185px;
+  margin-left: 265px;
 }
 /*---------------------------------------------------------*/
 .index-content
 {
   width:1024px;
-  border-radius:10px;
   margin:170px auto;
   text-align: center;
   line-height:1.6;
@@ -679,8 +677,7 @@ body
 
 .line-block
 {
-  perspective:800px;
-  transition: background 0.5s ease-in-out;
+  perspective:1200px;
   width:300px;
   height:150px;
   margin-left:32px;
@@ -690,8 +687,8 @@ body
 }
 .block {
   height: 150px;
-  perspective:800px;
-  transition: transform 0.5s ease-out;
+  perspective:1200px;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
   position:relative;
   cursor:pointer;
@@ -783,22 +780,18 @@ body
   }
   .popup-title
   {
-    margin-top: 50px;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 42px;
   }
-  .popup-title,.popup .sign-in .left_nav input,
-  .popup .sign-in .left_nav .button,
-  .popup .sign-up .left_nav input,
-  .popup .sign-up .left_nav .button,
-  {
-    margin-left: 63px;
-  }
+
   .sir
   {
-    margin-left: 160px;
+    margin-left: 188px;
   }
   .sur
   {
-    margin-left: 130px;
+    margin-left: 158px;
   }
   .sign-in .left_nav,.sign-in .right_nav,
   .sign-up .left_nav,.sign-up .right_nav
@@ -808,7 +801,7 @@ body
   }
   .google
   {
-    margin-top: 80px;
+    margin-top: 100px;
   }
   .facebook,.google,.twitter
   {
@@ -821,7 +814,13 @@ body
   .popup .sign-in .left_nav input,
   .popup .sign-up .left_nav input
   {
-    margin-top:15px;
+    margin-top:0px;
+    margin-left:40px;
+  }
+  .popup .sign-up .left_nav .button,
+  .popup .sign-in .left_nav .button
+  {
+      margin-left:40px;
   }
   .line-block
   {
@@ -838,7 +837,7 @@ body
   }
   .sir-ch,.sur-ch
   {
-    margin-left: 185px;
+    margin-left: 203px;
   }
   .line-button
   {
@@ -976,7 +975,15 @@ body
   }
   .sir-ch,.sur-ch
   {
-    margin-left: 175px;
+    margin-left: 225px;
+  }
+  .sir
+  {
+    margin-left: 207px;
+  }
+  .sur
+  {
+    margin-left: 177px;
   }
   .index-content
   {
@@ -997,7 +1004,7 @@ body
   {
     width:400px;
     height:114.95px;
-    margin-top:86px;
+    margin-top:156px;
   }
   .line-button img
   {
@@ -1017,7 +1024,7 @@ body
   }
   .chinese
   {
-    margin-top:112px;
+    margin-top:182px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1112,7 +1119,7 @@ body
   {
     width:300px;
     height:86.212px;
-    margin-top:165px;
+    margin-top:235px;
   }
   .line-button img
   {
@@ -1132,7 +1139,7 @@ body
   }
   .chinese
   {
-    margin-top:173px;
+    margin-top:243px;
   }
   .index-content .chtitle
   {

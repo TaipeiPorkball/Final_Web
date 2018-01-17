@@ -38,7 +38,6 @@ $("a.exit").click(function() {
   $("#popup").hide();
 })
 
-
 $(window).resize(function() {
   logbutton_center();
 });

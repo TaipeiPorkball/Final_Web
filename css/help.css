@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Yuan;
+  src: url("../font/GenJyuuGothic-Normal.ttf");
+}
+@font-face {
+  font-family: Comic Sans;
+  src: url("../font/911Fonts.com_ComicSansMSRegular__-_911fonts.com_fonts_BpCS.ttf");
+}
+body
+{
+  background: url('../img/1448943836598.png');
+}
+h1
+{
+  text-align:center;
+  font-family:Comic Sans,Yuan;
+  color: red;
+}
+p
+{
+  text-align:center;
+  font-family:Comic Sans,Yuan;
+  font-size: 20px;
+}
+.chinese
+{
+  margin-top: 100px;
+  font-size: 70px;
+}
+.english
+{
+  margin-top:-50px;
+}
+.icon
+{
+  margin: 40px auto;
+  width:300px;
+  height:167px;
+  background: url('../img/logo/topic-repairs-300x167.png');
+}

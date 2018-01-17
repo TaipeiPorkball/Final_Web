@@ -1,0 +1,22 @@
+body
+{
+  background: url("../img/green.png");
+  background-position:center top;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 968px) {
+  body
+  {
+    background: url("../img/green-mideum.png");
+    background-position:center top;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  body
+  {
+    background: url("../img/green-small.png");
+    background-position:center top;
+    background-repeat: no-repeat;
+  }
+}
