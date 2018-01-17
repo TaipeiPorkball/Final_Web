@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-
+  $('.hamburger').click(function(){
+		$(this).toggleClass('open');
+    $(".ham-list").slideToggle(500);
+	});
   //SlideToggle
   $(".profile").click(function() {
     $(".more").fadeToggle(500);
@@ -56,8 +59,10 @@ $("#top").click(function(){
 $(window).scroll(function() {
    if ( $(this).scrollTop() > 130){
       $('#top').fadeIn("fast");
+      $('.hamburger').fadeIn("fast");
    } else {
       $('#top').stop().fadeOut("fast");
+      $('.hamburger').fadeOut("fast");
    }
 });
 });

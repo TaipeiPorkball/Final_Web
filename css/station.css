@@ -20,49 +20,102 @@ html
   background:url("../img/zs-background.png");
   background-attachment: fixed;
 }
+.content
+{
+  width:100%
+ margin-left:1px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+}
+.photo
+{
+  width:500px;
+  height:375px;
+  margin-right:20px;
+  margin-bottom: 20px;
+}
+.lar-right
+{
+  margin-right:0px;
+}
+.ham-list
+{
+ position: fixed;
+ right:60px;
+ bottom:210px;
+ background-color:white;
+ border-radius: 10px;
+}
+.ham-list img
+{
+  background-color:white;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  width:70px;
+  height:70px;
+  float:left;
+  clear:both;
+}
 .hamburger
 {
-  width:100px;
-  height:100px;
+  width:70px;
+  height:70px;
+  position:fixed;
+  right:60px;
+  bottom:130px;
+  cursor: pointer;
+  display: none;
 }
-.hamburger span{
-  width:100px;
+.hamburger div{
+  width:70px;
   height:10px;
-  margin-bottom:3px;
+  margin-bottom:15px;
   background-color:#FFF;
   transform:rotate(0deg);
   transition: .7s ease-in-out;
 }
 
-.hamburger span:nth-child(1) {
+.hamburger div:nth-child(1) {
   -webkit-transform-origin:right center;
   transform-origin: right center;
 }
 
-.hamburger span:nth-child(2) {
+.hamburger div:nth-child(2) {
   -webkit-transform-origin:right center;
   transform-origin: right center;
 }
 
-.hamburger span:nth-child(3) {
+.hamburger div:nth-child(3) {
   -webkit-transform-origin:right center;
   transform-origin: right center;
 }
 
-.hamburger.open span:nth-child(1) {
-  -webkit-transform: translate(-3px, -2px) rotate(-48deg);
-  transform: translate(-3px, -2px) rotate(-48deg);
+.hamburger.open div:nth-child(1) {
+  -webkit-transform: translate(-3px, -2px) rotate(-45deg);
+  transform: translate(-3px, -2px) rotate(-45deg);
 }
 
-.hamburger.open span:nth-child(2) {
+.hamburger.open div:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-.hamburger.open span:nth-child(3) {
-  -webkit-transform:translate(-3px, -2px) rotate(48deg);
-  transform: translate(-3px, -2px) rotate(48deg);
+.hamburger.open div:nth-child(3) {
+  -webkit-transform:translate(-3px, -2px) rotate(45deg);
+  transform: translate(-3px, -2px) rotate(45deg);
 }
+#top
+{
+  width:70px;
+  height:70px;
+  position: fixed;
+  right:55px;
+  bottom:50px;
+  cursor:pointer;
+  z-index: 200;
+  display: none;
+}
+
 .header-main
 {
   width:1224px;
@@ -210,7 +263,7 @@ html
     display: none;
   }
 
-  .popup span {
+  .popup div {
     display: block;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
